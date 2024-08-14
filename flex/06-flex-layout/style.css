@@ -5,6 +5,11 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  min-width: min-content;
+
 }
 
 img {
@@ -24,3 +29,48 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+ul{
+  list-style-type: none; /* This removes the bullets from the list*/
+}
+
+a {
+  color: inherit;           /* Inherit the color from the parent element */
+  text-decoration: none;    /* Remove the underline */
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+.footer{
+
+  background-color:lightgray;
+}
+
+.content{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+  flex: 1;
+}
+
+.left-links, 
+.right-links {
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+ul li{
+  margin: 10px;
+}
+
